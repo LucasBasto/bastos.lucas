@@ -2,24 +2,26 @@
 
 Como executar o script:
 
-Primeiro arquivo: 'Script_teste_ethereum'
+Primeiro arquivo:  'Projeto.ethereum.sql'
+  -Criação da uma Database com nome Projeto,
+  -selecinar a tabela Projeto,
+  -Criação da tabela BLOCK,
+  -Criação da tabela TOKEN,
+  -Add uma FK na tabela TOKEN
 
-*Criação da uma Database com nome Projeto,
-*Selecinar a tabela Projeto,
-*Criação da tabela BLOCK,
-*Criação da tabela TOKEN,
-* Add uma FK na tabela TOKEN
+Segundo arquivo: 'values_table_block_projeto.ethereum.sql'
+  -Add os valores na tabela Block
 
-Segundo arquivo: 'values.block.teste.ethereum'
+Terceiro arquivo: values_table_token_projeto.ethereum.sql
+  -Add os valores da tabela Token
 
-Add os valores na tabela Block
+Quarto arquivo: 'querys_resolução_atividade.projeto_ethereum.sql'
+  - Querys para as resoluções das questões propostas
 
-Terceiro arquivo: values.block.teste.ethereum'
+Quinto arquivo: 'triggers_projeto_ethereum.sql'
+  - Criação da tabela 'historic' para armazenar as operações de inclusão ou exclusão de novas tokens.
+  - Trigger para Inserted.
+  - Trigger para Deleted.
 
-Add os valores da tabela Token
-
-* Após add os valores nas tabelas Block e Token, retornamos ao primeiro arquivo onde constam as resoluções das questões propostas.**
-
-Quarto arquivo: 'Other.querys.teste.ethereum'
-
-Outras querys executaveis na base de dados e criação de trigger.
+Sexto Arquivo: 'other.querys.teste.etherum.sql'
+  - Algumas querys para utilizar na database
